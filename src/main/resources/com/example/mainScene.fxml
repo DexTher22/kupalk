@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <Label layoutX="204.0" layoutY="115.0" prefHeight="25.0" prefWidth="86.0" text="Sugár" />
+      <Label layoutX="73.0" layoutY="31.0" prefHeight="50.0" prefWidth="466.0" text="Kör alapú kúp terfogat számoló" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="301.0" prefHeight="26.0" prefWidth="86.0" text="Térfogat">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="369.0" prefHeight="17.0" prefWidth="164.0" text="Magyar Márk 2026-03-30" />
+      <TextField fx:id="radiusField" layoutX="204.0" layoutY="144.0" />
+      <TextField fx:id="heightField" layoutX="204.0" layoutY="200.0" />
+      <TextField fx:id="volumeField" layoutX="130.0" layoutY="333.0" prefHeight="25.0" prefWidth="329.0" />
+      <Label layoutX="204.0" layoutY="174.0" prefHeight="25.0" prefWidth="86.0" text="Magasság" />
+      <Button layoutX="235.0" layoutY="239.0" mnemonicParsing="false" onAction="#onClickCalculateBtn" prefHeight="44.0" prefWidth="86.0" text="Számít" />
+   </children>
+</Pane>
